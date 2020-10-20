@@ -63,6 +63,11 @@ colPerc(table1)
 ## Inferential results 
 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 ## Conclusions
