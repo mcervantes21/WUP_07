@@ -54,6 +54,11 @@ barchartGC(~result + Sex,data=kRdata, type="Percent", main = "Frequency Bar Char
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex,data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
 ## Inferential results 
 
