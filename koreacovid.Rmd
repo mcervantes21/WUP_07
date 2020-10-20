@@ -1,7 +1,7 @@
 ---
 title: "covid 19"
-author: "Dr K"
-date: "5/2/2020"
+author: "Michelle Cervantes"
+date: "10/19/2020"
 output:
   html_document: default
   pdf_document: default
@@ -45,7 +45,9 @@ barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
   
 ### this bar chart is displaying in total frequency terms our data.  Clearly there are a lot less dead people than alive people as is reflected by the sizes of the bars in the display.  
 
-
+```{r}
+barchartGC(~result + Sex,data=kRdata, type="Percent", main = "Frequency Bar Chart")
+```
 
 
 
