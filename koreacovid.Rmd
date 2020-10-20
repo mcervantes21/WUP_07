@@ -49,9 +49,8 @@ barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
 barchartGC(~result + Sex,data=kRdata, type="Percent", main = "Frequency Bar Chart")
 ```
 
+Based off this chart is hows that out of 100% in the 'alive' group, about 59% of them are women and about 41% are men. In the 'dead' group, about 40% are women and about 62% are men.  
 
-
-  
 ## Numerical results
 
 ```{r}
@@ -60,8 +59,10 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-## Inferential results 
+Of the people who are alive, 56% of them are female and 44% of them are male and of the people who are dead, 36% of them are female and 64% of them are male. It looks like males are dying a lot more frequently than females are.
 
+
+## Inferential results 
 
 ```{r}
 chisq.test(table1)
@@ -69,6 +70,8 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+On the Fisher's exact test chart, the odds ratio tells us that the odds ratio of 2.3 : 1 means that the odds of a man dying is 2.3 chances higher than a woman. Our p-value is 0.0009, which tells us that the probability of data occurring again is 9 out of 10,000 which is not very likely but it can be possible since this disease is more harmful to men than women. 
 
 ## Conclusions
 
+To summarize the results, we noticed how COVID19 is far more fatal to men than women, so fatal that the chances of a man dying to covid is 2.3 chances higher than a woman. To answer the question, "Is dying independent of sex?" I reject the null hypothesis and would say that no. In this case, dying seems to be dependent on sex because of how frequently men are dying in comparison to women. 
